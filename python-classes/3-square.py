@@ -13,9 +13,12 @@ class Square:
         Initialize the square with a given size.
         Type must be int and value must be >= 0.
         """
+        self.size = size
+    @property
     def size(self):
         """ Return the size"""
         return self.__size
+    @size.setter
     def size(self, value):
         if not isinstance(value,  int):
             raise TypeError("size must be an integer")
