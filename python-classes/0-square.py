@@ -4,5 +4,5 @@ This module contain square size
 """
 class Square:
     """ Returns size """
-    def  __init__(self, __size):
-        self.size = __size
+    def  __init__(self, size):
+        self.__size = size
